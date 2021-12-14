@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="gazebo_odometry" pkg="racecar_description" type="gazebo_odometry.py"/>
+<!-- 如果启动多个机器人模型，需要修改urdf中调用 gazebo ros control 的 namespace，注释掉 -->
+  <include file="$(find bringup)/launch/gazebo/racecar.launch"></include>
+
+  <node name="rviz" pkg="rviz" type="rviz"
+        args="-d $(find bringup)/rviz/racecar_urdf.rviz" required="true"/>
+
+
+
+</launch>
