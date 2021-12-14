@@ -34,12 +34,12 @@ Move_base：http://wiki.ros.org/move_base/
 
 ## 增加了livox
 
-在 racecar.urdf.xacro 调用了 livox xacro 文件
-结合livox gazebo 仓库的功能包使用
-把两个功能包拷贝到工作空间下，编译
+在 racecar.urdf.xacro 调用了 livox xacro 文件，
+结合livox gazebo 仓库的功能包使用，
+把两个功能包拷贝到工作空间下，编译，
 然后运行两个launch 文件：
-**运行bringup 功能包的 racecar_gazebo_rviz.launch**
+**运行bringup 功能包的 racecar_gazebo_rviz.launch**；
 
-**运行bringup 功能包的 move_base_fake.launch**
+**运行bringup 功能包的 move_base_fake.launch**；
 
 如果不需要livox，把 racecar.urdf.xacro 调用 livox_to_car.xacro 注释掉
