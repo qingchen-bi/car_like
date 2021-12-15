@@ -22,15 +22,15 @@ Move_base：http://wiki.ros.org/move_base/
 
 ## car 相关的文件 去掉了命名空间 修改记录
 
-/home/bqc/catkin_mp_ws/src/ackerman_simulation/racecar_description/scripts/servo_commands.py
+/racecar_description/scripts/servo_commands.py
 
-/home/bqc/catkin_mp_ws/src/ackerman_simulation/bringup/launch/gazebo/racecar.launch
+/bringup/launch/gazebo/racecar.launch
 
 主要去掉了robot joint state publish 的命名空间、控制器的命名空间 ns
 
-/home/bqc/catkin_mp_ws/src/ackerman_simulation/racecar_description/urdf/racecar.urdf.xacro
+/racecar_description/urdf/racecar.urdf.xacro
 
-/home/bqc/catkin_mp_ws/src/ackerman_simulation/bringup/config/ctrl.yaml
+/bringup/config/ctrl.yaml
 
 ## 增加了livox
 
